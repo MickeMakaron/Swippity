@@ -2,5 +2,5 @@
 
 std::string hello()
 {
-    return "bye";
+    return "hello";
 }
