@@ -1,12 +1,7 @@
 #include "hello.hpp"
+#include "catch.hpp"
 
-int main()
+TEST_CASE("hello() returns hello", "[hello]")
 {
-    if(hello() == "hello")
-    {
-        return 0;
-    }
-
-    return 1;
+    REQUIRE(hello() == "hello");
 }
-
