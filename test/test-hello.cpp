@@ -3,5 +3,5 @@
 
 TEST_CASE("hello() returns hello", "[hello]")
 {
-    REQUIRE(hello() == "bye");
-}[
+    REQUIRE(hello() == "hello");
+}
