@@ -1,5 +1,3 @@
-set(SRC_PATH "../src")
-
 include_directories(${SRC_PATH})
 
 set(TEST_SRC

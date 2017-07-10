@@ -8,7 +8,7 @@ set(GLOBAL PROPERTY USE_FOLDERS ON)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(SRC_PATH "src")
+get_filename_component(SRC_PATH "src" ABSOLUTE)
 
 set(SRC
     "${SRC_PATH}/hello.cpp"
