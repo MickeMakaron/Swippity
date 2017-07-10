@@ -10,9 +10,10 @@ set(TEST_SRC
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable("${PROJECT_NAME}-test" ${TEST_SRC} $<TARGET_OBJECTS:OBJ>)
+set(TEST_EXE "${PROJECT_NAME}-test")
+add_executable(${TEST_EXE} ${TEST_SRC} $<TARGET_OBJECTS:OBJ>)
 
 
 enable_testing()
-add_test(NAME "test-hello" COMMAND "${PROJECT_NAME}-test")
+add_test(NAME "test-hello" COMMAND sh -c "$<TARGET_FILE:${TEST_EXE}> -r junit > test-out.xml")
 
