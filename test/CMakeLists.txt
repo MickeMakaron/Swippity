@@ -5,9 +5,6 @@ set(TEST_SRC
     "test-hello.cpp"
 )
 
-set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
 set(TEST_EXE "${PROJECT_NAME}-test")
 add_executable(${TEST_EXE} ${TEST_SRC} $<TARGET_OBJECTS:OBJ>)
 

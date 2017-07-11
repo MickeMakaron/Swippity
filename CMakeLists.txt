@@ -5,9 +5,7 @@ project(swippity)
 
 set(GLOBAL PROPERTY USE_FOLDERS ON)
 
-set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_FLAGS "-Werror -Wall -Wextra -pedantic-errors -std=c++14")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror -Wall -Wextra -pedantic-errors -std=c++14")
 
 
 get_filename_component(SRC_PATH "src" ABSOLUTE)
