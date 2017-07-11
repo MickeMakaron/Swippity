@@ -3,6 +3,5 @@
 
 TEST_CASE("hello() returns hello", "[hello]")
 {
-    new float();
     REQUIRE(hello() == "hello");
 }
