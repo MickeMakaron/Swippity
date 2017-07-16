@@ -2,5 +2,11 @@
 
 std::string hello()
 {
-    return "hello";
+	static bool doHello = true;
+	if(doHello)
+	{
+		doHello = false;
+		return "hello";
+	}
+	return "bye";
 }
